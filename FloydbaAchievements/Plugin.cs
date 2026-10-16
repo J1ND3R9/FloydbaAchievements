@@ -56,12 +56,14 @@ namespace FloydbaAchievements
         private void RegisterHiddenAchievements()
         {
             string megalovaniaName = LocaleRegistry.Get("achievement_megalovania_name", "Megalovania"); // DONE
-            string megalovaniaDesc = LocaleRegistry.Get("achievement_megalovania_desc", "Toby fox <3");
+            string megalovaniaDesc = LocaleRegistry.Get("achievement_megalovania_desc", "Write 2293.");
+            string megalovaniaShortDesc = LocaleRegistry.Get("achievement_megalovania_short_desc", "Toby fox <3");
             Sprite megalovaniaIcon = null;
             Achievements.Register(AchievementDefinition.Instant(
                 id: "megalovania",
                 name: megalovaniaName,
                 description: megalovaniaDesc,
+                shortDescription: megalovaniaShortDesc,
                 icon: megalovaniaIcon,
                 hidden: true
                 ));
@@ -136,7 +138,7 @@ namespace FloydbaAchievements
         private void RegisterCounterAchievements()
         {
             string littlePocketsName = LocaleRegistry.Get("achievement_little_pockets_name", "And what do we have in our little pockets?"); // DONE
-            string littlePocketsDesc = LocaleRegistry.Get("achievement_little_pockets_desc", "Craft 100 unique items");
+            string littlePocketsDesc = LocaleRegistry.Get("achievement_little_pockets_desc", "Craft 100 unique items.");
             Sprite littlePocketsIcon = null;
             Achievements.Register(AchievementDefinition.Counter(
                 id: "little_pockets",
