@@ -114,6 +114,10 @@
     <Content Include="Assets\what_i_was_taught_icon_unlock.png" />
     <Content Include="Assets\where_is_that_damn_battery_icon_unlock.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Locales\ru-RU.json" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="CopyToPluginsFolder" AfterTargets="Build">
     <MakeDir Directories="$(BepInExDir)\plugins\$(ProjectName)" Condition="!Exists('$(BepInExDir)\plugins\$(ProjectName)')" />
