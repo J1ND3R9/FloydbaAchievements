@@ -1,9 +1,4 @@
 ﻿using CUAchievements.Registry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FloydbaAchievements
 {
@@ -15,7 +10,7 @@ namespace FloydbaAchievements
         }
         static void CheckDeadGod()
         {
-            if (!Plugin.Achievements.TryGet("dead_god", out var deadGod))
+            if (!Plugin.Achievements.TryGet("dead_god", out RegisteredAchievement deadGod))
                 return;
 
             if (deadGod.IsUnlocked) return;

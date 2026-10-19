@@ -97,6 +97,7 @@
     <Content Include="Assets\alan_we_are_so_fucked_icon_unlock.png" />
     <Content Include="Assets\alpha_ray_disco_icon_unlock.png" />
     <Content Include="Assets\and_they_said_milkys_were_smart_icon_unlock.png" />
+    <Content Include="Assets\body_in_the_waters_icon_unlock.png" />
     <Content Include="Assets\craft_icon_unlock.png" />
     <Content Include="Assets\darwin_award_icon_unlock.png" />
     <Content Include="Assets\deadg_god_icon_unlock.png" />
@@ -104,6 +105,7 @@
     <Content Include="Assets\i_will_definitely_survive_icon_unlock.png" />
     <Content Include="Assets\lobotomy_icon_unlock.png" />
     <Content Include="Assets\luminary_of_science_icon_unlock.png" />
+    <Content Include="Assets\megalovania_icon_unlock.png" />
     <Content Include="Assets\monster_hunter_icon_unlock.png" />
     <Content Include="Assets\neural_degradation_icon_unlock.png" />
     <Content Include="Assets\paint_it_yellow_icon_unlock.png" />

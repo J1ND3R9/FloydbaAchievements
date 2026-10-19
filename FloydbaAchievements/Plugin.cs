@@ -14,7 +14,7 @@ namespace FloydbaAchievements
     {
         public const string ModGUID = "com.github.j1nd3r9.floydbaachievements";
         public const string ModName = "Floydba Achievements";
-        public const string ModVersion = "1.0.0";
+        public const string ModVersion = "1.0.1";
         internal static new ManualLogSource Logger;
         internal static AchievementsAPI Achievements;
         private readonly Harmony _harmony = new Harmony(ModGUID);
@@ -48,7 +48,7 @@ namespace FloydbaAchievements
             LocalizedText megalovaniaName = new LocalizedText("achievement_megalovania_name", "Megalovania"); // untested
             LocalizedText megalovaniaDesc = new LocalizedText("achievement_megalovania_desc", "Write 2293.");
             LocalizedText megalovaniaShortDesc = new LocalizedText("achievement_megalovania_short_desc", "Toby fox <3");
-            Sprite megalovaniaIcon = null;
+            Sprite megalovaniaIcon = AssetLoader.LoadSpriteFromPluginFolder(this, "Assets/megalovania_icon_unlock.png");
             Achievements.Register(AchievementDefinition.Instant(
                 id: "megalovania",
                 name: megalovaniaName,
@@ -60,7 +60,7 @@ namespace FloydbaAchievements
 
             LocalizedText bodiesInTheWaterName = new LocalizedText("achievement_bodies_in_the_water_name", "I do not recognize the bodies in the water"); // untested
             LocalizedText bodiesInTheWaterDesc = new LocalizedText("achievement_bodies_in_the_water_desc", "Die in the water.");
-            Sprite bodiesInTheWaterIcon = null;
+            Sprite bodiesInTheWaterIcon = AssetLoader.LoadSpriteFromPluginFolder(this, "Assets/body_in_the_waters_icon_unlock.png");
             Achievements.Register(AchievementDefinition.Instant(
                 id: "bodies_in_the_water",
                 name: bodiesInTheWaterName,
@@ -164,7 +164,7 @@ namespace FloydbaAchievements
                 difficulty: AchievementDifficulty.Hard
                 ));
 
-            
+
         }
 
         private void RegisterInstantAchievements()
